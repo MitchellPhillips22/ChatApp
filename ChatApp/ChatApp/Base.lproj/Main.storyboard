@@ -8,6 +8,7 @@
         <mutableArray key="Lobster_1.3.otf">
             <string>Lobster1.3</string>
             <string>Lobster1.3</string>
+            <string>Lobster1.3</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -24,30 +25,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Now or Never!  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfr-0q-tkm">
-                                <rect key="frame" x="141" y="174.5" width="318.5" height="50"/>
+                                <rect key="frame" x="141" y="174" width="318.5" height="50"/>
                                 <fontDescription key="fontDescription" name="Lobster1.3" family="Lobster 1.3" pointSize="50"/>
-                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="textColor" red="0.98656226390289581" green="1" blue="0.92267877642817142" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CZ-1C-fow">
+                                <rect key="frame" x="197.5" y="488" width="205" height="37"/>
+                                <fontDescription key="fontDescription" name="Lobster1.3" family="Lobster 1.3" pointSize="25"/>
+                                <state key="normal" title="  Let's get started! →  ">
+                                    <color key="titleColor" red="0.85580283720000005" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LN-yT-t9X">
                                 <rect key="frame" x="213" y="135" width="175" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="yFD-eB-BgZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Lobster1.3" family="Lobster 1.3" pointSize="29"/>
-                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="textColor" red="0.98656226390000001" green="1" blue="0.92267877639999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qfr-0q-tkm" firstAttribute="top" secondItem="2LN-yT-t9X" secondAttribute="bottom" constant="10" id="MLv-oI-Bhh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5CZ-1C-fow" secondAttribute="bottom" constant="75" id="e92-Ur-kFi"/>
+                            <constraint firstItem="5CZ-1C-fow" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="epa-ik-QuA"/>
                             <constraint firstItem="2LN-yT-t9X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="hm2-qX-eKD"/>
                             <constraint firstItem="2LN-yT-t9X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i8I-Rr-Y6j"/>
                             <constraint firstItem="qfr-0q-tkm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pdo-1W-yLp"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginOutlet" destination="5CZ-1C-fow" id="vvR-g6-1sc"/>
                         <outlet property="titleLabel" destination="qfr-0q-tkm" id="9xe-sG-TsA"/>
                         <outlet property="welcomeLabel" destination="2LN-yT-t9X" id="UcL-n0-ub1"/>
                     </connections>

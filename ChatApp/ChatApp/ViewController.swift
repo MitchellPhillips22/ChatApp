@@ -14,12 +14,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     
+    @IBOutlet weak var loginOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //set view background color gradient
         setGradientBackground()
         self.view.bringSubviewToFront(welcomeLabel)
         self.view.bringSubviewToFront(titleLabel)
+        self.view.bringSubviewToFront(loginOutlet)
     }
     
 //MARK- Create gradient for background
