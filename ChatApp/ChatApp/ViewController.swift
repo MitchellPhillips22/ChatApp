@@ -10,10 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //set view background color gradient
         setGradientBackground()
+        self.view.bringSubviewToFront(welcomeLabel)
+        self.view.bringSubviewToFront(titleLabel)
     }
     
 //MARK- Create gradient for background
@@ -25,8 +31,10 @@ class ViewController: UIViewController {
         gradientLayer.colors = [ colorTop, colorBottom]
         gradientLayer.locations = [ 0.5, 1.0]
         gradientLayer.frame = self.view.bounds
+        gradientLayer.opaque = false 
         
         self.view.layer.addSublayer(gradientLayer)
+        
         print("did create gradient")
     }
 }
