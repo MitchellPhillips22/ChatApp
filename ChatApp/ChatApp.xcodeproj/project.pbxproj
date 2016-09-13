@@ -13,6 +13,7 @@
 		1B4318AB1D7A05C400067D4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4318A91D7A05C400067D4E /* Main.storyboard */; };
 		1B4318AD1D7A05C400067D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4318AC1D7A05C400067D4E /* Assets.xcassets */; };
 		1B4318B01D7A05C400067D4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4318AE1D7A05C400067D4E /* LaunchScreen.storyboard */; };
+		1BF81E041D889263008B3899 /* Lobster_1.3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BF81E031D889263008B3899 /* Lobster_1.3.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		1B4318AC1D7A05C400067D4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B4318AF1D7A05C400067D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B4318B11D7A05C400067D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BF81E031D889263008B3899 /* Lobster_1.3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lobster_1.3.otf; sourceTree = "<group>"; };
 		9BC8A0930BC2EAADFBFBF50C /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatApp/Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E37F778CE5D36AFAA83C2B66 /* Pods_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D7D2277443930D6B4F4AE4 /* Pods-ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatApp/Pods-ChatApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				1B4318AC1D7A05C400067D4E /* Assets.xcassets */,
 				1B4318AE1D7A05C400067D4E /* LaunchScreen.storyboard */,
 				1B4318B11D7A05C400067D4E /* Info.plist */,
+				1BF81E031D889263008B3899 /* Lobster_1.3.otf */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				1B4318B01D7A05C400067D4E /* LaunchScreen.storyboard in Resources */,
 				1B4318AD1D7A05C400067D4E /* Assets.xcassets in Resources */,
+				1BF81E041D889263008B3899 /* Lobster_1.3.otf in Resources */,
 				1B4318AB1D7A05C400067D4E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
