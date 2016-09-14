@@ -12,10 +12,10 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="ChatApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -36,6 +36,9 @@
                                 <state key="normal" title="  Let's get started! →  ">
                                     <color key="titleColor" red="0.85580283720000005" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Exu-dV-55H" kind="show" identifier="loginSegue" id="TEB-cz-F9A"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LN-yT-t9X">
                                 <rect key="frame" x="213" y="135" width="175" height="29"/>
@@ -66,6 +69,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="241"/>
+        </scene>
+        <!--Application View Controller-->
+        <scene sceneID="pw0-tL-4tB">
+            <objects>
+                <viewController id="Exu-dV-55H" customClass="ApplicationViewController" customModule="ChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="USH-7r-61D"/>
+                        <viewControllerLayoutGuide type="bottom" id="01B-SG-Iyr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pOI-ww-7qF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2cx-G7-Hkg">
+                                <rect key="frame" x="10" y="560" width="580" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2cx-G7-Hkg" firstAttribute="centerX" secondItem="pOI-ww-7qF" secondAttribute="centerX" id="4QE-DO-GU4"/>
+                            <constraint firstAttribute="trailing" secondItem="2cx-G7-Hkg" secondAttribute="trailing" constant="10" id="5Pn-I7-A6s"/>
+                            <constraint firstItem="2cx-G7-Hkg" firstAttribute="leading" secondItem="pOI-ww-7qF" secondAttribute="leading" constant="10" id="Zud-sO-A8y"/>
+                            <constraint firstItem="01B-SG-Iyr" firstAttribute="top" secondItem="2cx-G7-Hkg" secondAttribute="bottom" constant="10" id="ocm-1g-7jV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8x-bv-IC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="242"/>
         </scene>
     </scenes>
 </document>
