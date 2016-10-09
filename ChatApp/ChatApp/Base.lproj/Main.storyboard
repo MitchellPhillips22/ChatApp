@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="Lobster_1.3.otf">
+        <array key="Lobster_1.3.otf">
             <string>Lobster1.3</string>
-            <string>Lobster1.3</string>
-            <string>Lobster1.3</string>
-        </mutableArray>
+        </array>
     </customFonts>
     <scenes>
         <!--Home View Controller-->
@@ -21,36 +20,33 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Now or Never!  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfr-0q-tkm">
-                                <rect key="frame" x="141" y="174" width="318.5" height="50"/>
                                 <fontDescription key="fontDescription" name="Lobster1.3" family="Lobster 1.3" pointSize="50"/>
-                                <color key="textColor" red="0.98656226390289581" green="1" blue="0.92267877642817142" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.98656226390289581" green="1" blue="0.92267877642817142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CZ-1C-fow">
-                                <rect key="frame" x="197.5" y="488" width="205" height="37"/>
                                 <fontDescription key="fontDescription" name="Lobster1.3" family="Lobster 1.3" pointSize="25"/>
                                 <state key="normal" title="  Let's get started! →  ">
-                                    <color key="titleColor" red="0.85580283720000005" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.85580283720000005" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Exu-dV-55H" kind="show" identifier="loginSegue" id="TEB-cz-F9A"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LN-yT-t9X">
-                                <rect key="frame" x="213" y="135" width="175" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="yFD-eB-BgZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Lobster1.3" family="Lobster 1.3" pointSize="29"/>
-                                <color key="textColor" red="0.98656226390000001" green="1" blue="0.92267877639999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.98656226390000001" green="1" blue="0.92267877639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qfr-0q-tkm" firstAttribute="top" secondItem="2LN-yT-t9X" secondAttribute="bottom" constant="10" id="MLv-oI-Bhh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5CZ-1C-fow" secondAttribute="bottom" constant="75" id="e92-Ur-kFi"/>
@@ -79,16 +75,15 @@
                         <viewControllerLayoutGuide type="bottom" id="01B-SG-Iyr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pOI-ww-7qF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2cx-G7-Hkg">
-                                <rect key="frame" x="10" y="560" width="580" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2cx-G7-Hkg" firstAttribute="centerX" secondItem="pOI-ww-7qF" secondAttribute="centerX" id="4QE-DO-GU4"/>
                             <constraint firstAttribute="trailing" secondItem="2cx-G7-Hkg" secondAttribute="trailing" constant="10" id="5Pn-I7-A6s"/>
